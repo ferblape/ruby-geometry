@@ -35,7 +35,7 @@ module Geometry
 
     def lies_on_one_line_with?(segment)
       Segment.new(point1, segment.point1).parallel_to?(self) &&
-        Segment.new(point1, segment.point2).parallel_to?(self)
+        Segment.new(point2, segment.point2).parallel_to?(self)
     end
 
     def intersects_with?(segment)

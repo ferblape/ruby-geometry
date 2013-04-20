@@ -1,5 +1,4 @@
-require 'test/unit'
-require 'geometry'
+require 'test_helper'
 
 class CollinearWithTest < Test::Unit::TestCase
   include Geometry

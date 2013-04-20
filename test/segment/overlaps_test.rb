@@ -1,5 +1,4 @@
-require 'test/unit'
-require 'geometry'
+require 'test_helper'
 
 class OverlapsTest < Test::Unit::TestCase
   include Geometry
@@ -27,7 +26,7 @@ class OverlapsTest < Test::Unit::TestCase
     segment1 = Segment.new_by_arrays([0, 0], [1, 0])
     segment2 = Segment.new_by_arrays([1, 0], [2, 0])
 
-    assert ! segment1.overlaps?(segment2)
+    assert segment1.overlaps?(segment2)
   end
 
   def test_lies_on_one_line

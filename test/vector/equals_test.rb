@@ -1,5 +1,4 @@
-require 'test/unit'
-require 'geometry'
+require 'test_helper'
 
 class EqualsTest < Test::Unit::TestCase
   include Geometry

@@ -1,5 +1,4 @@
-require 'test/unit'
-require 'geometry'
+require 'test_helper'
 
 class IntersectionPointWithTest < Test::Unit::TestCase
   include Geometry
@@ -49,6 +48,8 @@ class IntersectionPointWithTest < Test::Unit::TestCase
     segment1 = Segment.new_by_arrays([0, 0], [1, 0])
     segment2 = Segment.new_by_arrays([1, 0], [2, 0])
 
-    assert_equal Point.new(0, 1), segment1.intersection_point_with(segment2)
+    assert_raise SegmentsOverlap do
+      segment1.intersection_point_with(segment2)
+    end
   end
 end

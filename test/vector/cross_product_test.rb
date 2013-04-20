@@ -1,5 +1,4 @@
-require 'test/unit'
-require 'geometry'
+require 'test_helper'
 
 class CrossProductTest < Test::Unit::TestCase
   include Geometry

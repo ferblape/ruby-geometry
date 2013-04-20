@@ -1,5 +1,4 @@
-require 'test/unit'
-require 'geometry'
+require 'test_helper'
 
 class AngleToTest < Test::Unit::TestCase
   include Geometry
